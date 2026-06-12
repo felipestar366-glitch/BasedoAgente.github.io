@@ -232,7 +232,7 @@
             
             alert(`Agente ${nome} devidamente registrado nos arquivos locais da Base!`);
 
-            window.location.href = 'home.html';
+            window.location.href = window.location.pathname.replace('index.html', '') + 'home.html';
             
             // Limpa o formulário para o próximo input
             document.getElementById('cadastroForm').reset();
